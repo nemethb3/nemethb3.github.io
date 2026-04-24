@@ -1,0 +1,50 @@
+title: "NBA Player Clustering by Playing Style"
+
+short_summary: >
+  Clustered 301 NBA players from the 2023–24 regular season into six distinct
+  playing-style archetypes using K-Means, PCA, and UMAP. The project spans a
+  full ML pipeline — data collection via the NBA API, feature engineering,
+  unsupervised modeling, and 13 interactive visualizations — to answer the
+  question: what types of players actually exist in the modern NBA?
+
+tech_stack:
+  - Python
+  - nba_api
+  - scikit-learn
+  - pandas
+  - NumPy
+  - UMAP
+  - Plotly
+  - seaborn
+  - Jupyter Notebooks
+
+problem_statement: >
+  NBA player positions (Guard, Forward, Center) are too coarse to capture how
+  modern players actually play. A stretch-four and a rim-running big both
+  count as "power forwards," yet they fill completely different roles. The goal
+  was to let the data define player types from scratch — without relying on
+  traditional labels — using only per-game statistics and engineered performance
+  features.
+
+approach: >
+  Pulled per-game stats for 572 players via the NBA API and filtered to 301
+  qualified players (≥30 games, ≥15 minutes per game). Engineered 13 features
+  including per-minute scoring and rebounding rates, three-point rate, paint
+  score, assist ratio, and an encoded position score. Applied StandardScaler
+  before running K-Means with elbow-method and silhouette-score tuning to
+  select K=6. Reduced dimensions with PCA and UMAP for visualization, then used
+  an auction-based labeling algorithm to assign each cluster a unique,
+  meaningful archetype name based on the centroid feature profile.
+
+results_impact: >
+  Produced six interpretable archetypes — Elite Scorer, Playmaker, 3PT
+  Specialist, Rebounding Big, Rim Protector, and Perimeter Defender — with
+  well-known players anchoring each group (e.g., Luka Dončić in Elite Scorer,
+  Rudy Gobert in Rebounding Big). Interactive Plotly scatter plots and radar
+  charts allow exploration of all 301 players and their cluster profiles.
+  The clustering confirmed that modern NBA roles do not map cleanly onto
+  traditional positions, and that three-point tendency and playmaking together
+  drive the largest variance across players.
+
+repo_url: "https://github.com/nemethb3/cmse492-nba-player-clustering"
+image_path: "img/placeholder_project_2.png"

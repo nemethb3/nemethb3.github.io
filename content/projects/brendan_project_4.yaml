@@ -1,0 +1,42 @@
+title: "NYC 311 Cloud Analytics (AWS)"
+
+short_summary: >
+  Built a cloud-based analytics pipeline on AWS to explore 200,000 NYC 311
+  service requests from Q1 2026. Ingested raw data into S3, queried it with
+  Athena using SQL, and produced stakeholder-ready findings on complaint volume
+  by borough, agency, and complaint type — all without provisioning a single
+  server.
+
+tech_stack:
+  - AWS S3
+  - AWS Athena
+  - SQL
+  - Python
+  - pandas
+
+problem_statement: >
+  New York City receives millions of 311 service requests each year across
+  dozens of agencies. Understanding which boroughs generate the most complaints,
+  which agencies handle the highest volume, and how complaint type varies by
+  location requires working with large datasets efficiently. The challenge was
+  to stand up a scalable, serverless query environment from raw CSV data without
+  managing infrastructure.
+
+approach: >
+  Loaded a 200k-row sample of NYC 311 complaints (Jan–Mar 2026) and a
+  companion agencies lookup table into an S3 bucket. Registered both tables
+  in AWS Athena and wrote SQL queries to count complaints by agency, join
+  agency names, group by borough and complaint type, and identify the top
+  complaint categories per area. All queries run serverlessly against data
+  stored in S3, making the workflow reproducible and cost-effective.
+
+results_impact: >
+  Identified the top 10 agencies by complaint volume and mapped complaint types
+  — including Snow or Ice, Noise, and HEAT/HOT WATER — across all five boroughs.
+  The Athena-based setup means any stakeholder with AWS access can run the
+  same queries against updated data without additional engineering. This project
+  demonstrates a practical cloud data workflow: raw files in S3, schema-on-read
+  querying with Athena, and shareable SQL reports.
+
+repo_url: "https://github.com/nemethb3/aws-nyc311-nemethb3"
+image_path: "img/placeholder_project_1.png"

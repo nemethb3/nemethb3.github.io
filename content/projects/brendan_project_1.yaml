@@ -1,0 +1,50 @@
+title: "March Madness Upset Analytics"
+
+short_summary: >
+  Built an end-to-end analytics platform to identify and explain potential
+  NCAA Tournament upsets. The app combines historical performance data,
+  team-level features, and probabilistic modeling to surface high-risk
+  matchups and generate data-driven bracket recommendations through an
+  interactive Streamlit dashboard.
+
+tech_stack:
+  - Python
+  - pandas
+  - scikit-learn
+  - Streamlit
+  - Plotly
+  - NumPy
+
+problem_statement: >
+  March Madness is inherently unpredictable, making it difficult to
+  consistently identify which lower-seeded teams have a realistic chance
+  to win. Most brackets rely on intuition or surface-level stats, which
+  fail to capture deeper performance signals. There is a need for a
+  structured, data-driven approach that quantifies upset probability and
+  provides clear reasoning behind each prediction.
+
+approach: >
+  Built a full data pipeline that integrates NCAA tournament data,
+  team-level performance metrics, and seed information to construct
+  Round 1 matchups and beyond. Engineered features such as efficiency
+  metrics, power ratings, and historical performance indicators, then
+  applied probabilistic modeling to estimate win likelihoods for each
+  game. Developed logic to identify underdogs, assign upset probabilities,
+  and generate interpretable “why” factors based on feature differentials.
+  Deployed the system as an interactive Streamlit app with modules for
+  upset alerts, bracket building, and tournament simulations.
+
+results_impact: >
+  Built a full data pipeline that integrates NCAA tournament data,
+  team-level performance metrics, and seed information to construct
+  Round 1 matchups and beyond. Engineered features such as efficiency
+  metrics, power ratings, and historical performance indicators, then
+  applied probabilistic modeling to estimate win likelihoods for each
+  game. Developed logic to identify underdogs, assign upset probabilities,
+  and generate interpretable “why” factors based on feature differentials.
+  Deployed the system as an interactive Streamlit app with modules for
+  upset alerts, bracket building, and tournament simulations.
+
+repo_url: "https://github.com/nemethb3/march-madness-upset-analytics.git"
+notebook_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb"
+image_path: "img/placeholder_project_1.png"
