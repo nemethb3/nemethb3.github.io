@@ -53,16 +53,16 @@ I’m currently seeking data analyst or data science roles where I can continue 
       <div class="project-image-wrapper">
         <img
           src="img/placeholder_project_1.png"
-          alt="Thumbnail for Optimal Nap Spot Prediction Across Campus"
+          alt="Thumbnail for March Madness Upset Analytics"
           class="project-image"
         />
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">Optimal Nap Spot Prediction Across Campus</h3>
+        <h3 class="project-title">March Madness Upset Analytics</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Built a model to identify the best nap locations on MSU&#39;s campus based on sunlight exposure, foot traffic, grass quality, and proximity to food smells. Findings have been peer-reviewed by three other dogs and were described as &#34;life-changing&#34; and &#34;very good.&#34;
+        <p class="project-summary">Built an end-to-end analytics platform to identify and explain potential NCAA Tournament upsets. The app combines historical performance data, team-level features, and probabilistic modeling to surface high-risk matchups and generate data-driven bracket recommendations through an interactive Streamlit dashboard.
 </p>
 
         <!-- Tech stack as pill badges -->
@@ -70,13 +70,15 @@ I’m currently seeking data analyst or data science roles where I can continue 
           
           <span class="tech-badge">Python</span>
           
-          <span class="tech-badge">scikit-learn</span>
-          
           <span class="tech-badge">pandas</span>
           
-          <span class="tech-badge">matplotlib</span>
+          <span class="tech-badge">scikit-learn</span>
           
-          <span class="tech-badge">Jupyter Notebooks</span>
+          <span class="tech-badge">Streamlit</span>
+          
+          <span class="tech-badge">Plotly</span>
+          
+          <span class="tech-badge">NumPy</span>
           
         </div>
 
@@ -86,19 +88,19 @@ I’m currently seeking data analyst or data science roles where I can continue 
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>Finding a good nap spot is harder than it looks. Campus is large, conditions change throughout the day, and the best patches of sun move. A mascot operating on intuition alone wastes valuable resting time — a problem that affects productivity, morale, and tail-wagging rates across the entire campus community.
+            <p>March Madness is inherently unpredictable, making it difficult to consistently identify which lower-seeded teams have a realistic chance to win. Most brackets rely on intuition or surface-level stats, which fail to capture deeper performance signals. There is a need for a structured, data-driven approach that quantifies upset probability and provides clear reasoning behind each prediction.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Collected location data across 47 candidate nap sites over a full academic semester. Features included average daily sunlight (hours), grass softness score (1–10, assessed manually), nearby food-cart proximity, and pedestrian traffic by hour. Trained a gradient boosting classifier to predict a site&#39;s &#34;nap quality&#34; rating and used SHAP values to explain which features mattered most.
+            <p>Built a full data pipeline that integrates NCAA tournament data, team-level performance metrics, and seed information to construct Round 1 matchups and beyond. Engineered features such as efficiency metrics, power ratings, and historical performance indicators, then applied probabilistic modeling to estimate win likelihoods for each game. Developed logic to identify underdogs, assign upset probabilities, and generate interpretable “why” factors based on feature differentials. Deployed the system as an interactive Streamlit app with modules for upset alerts, bracket building, and tournament simulations.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>The model achieved 89% accuracy on held-out test sites. Sunlight duration and grass softness were the top two predictive features, while proximity to the student union food court provided a meaningful but secondary boost. A ranked list of top-10 nap sites was distributed to the campus dog community and has since been downloaded 847 times.
+            <p>Built a full data pipeline that integrates NCAA tournament data, team-level performance metrics, and seed information to construct Round 1 matchups and beyond. Engineered features such as efficiency metrics, power ratings, and historical performance indicators, then applied probabilistic modeling to estimate win likelihoods for each game. Developed logic to identify underdogs, assign upset probabilities, and generate interpretable “why” factors based on feature differentials. Deployed the system as an interactive Streamlit app with modules for upset alerts, bracket building, and tournament simulations.
 </p>
           </div>
         </details>
@@ -106,7 +108,7 @@ I’m currently seeking data analyst or data science roles where I can continue 
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/zeke-wonder-dog/nap-spot-predictor" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="https://github.com/nemethb3/march-madness-upset-analytics.git" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
@@ -126,16 +128,16 @@ I’m currently seeking data analyst or data science roles where I can continue 
       <div class="project-image-wrapper">
         <img
           src="img/placeholder_project_2.png"
-          alt="Thumbnail for Spartan Football Crowd Cheer Analysis"
+          alt="Thumbnail for NBA Player Clustering by Playing Style"
           class="project-image"
         />
       </div>
 
       <div class="project-body">
-        <h3 class="project-title">Spartan Football Crowd Cheer Analysis</h3>
+        <h3 class="project-title">NBA Player Clustering by Playing Style</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Analyzed audio and attendance data from Spartan Stadium to understand what game events drive the loudest crowd reactions. Results were used to help the athletics department optimize in-game entertainment and — personally — to determine the exact moments when I should run onto the field for maximum dramatic effect.
+        <p class="project-summary">Clustered 301 NBA players from the 2023–24 regular season into six distinct playing-style archetypes using K-Means, PCA, and UMAP. The project spans a full ML pipeline — data collection via the NBA API, feature engineering, unsupervised modeling, and 13 interactive visualizations — to answer the question: what types of players actually exist in the modern NBA?
 </p>
 
         <!-- Tech stack as pill badges -->
@@ -143,11 +145,19 @@ I’m currently seeking data analyst or data science roles where I can continue 
           
           <span class="tech-badge">Python</span>
           
+          <span class="tech-badge">nba_api</span>
+          
+          <span class="tech-badge">scikit-learn</span>
+          
           <span class="tech-badge">pandas</span>
           
-          <span class="tech-badge">seaborn</span>
+          <span class="tech-badge">NumPy</span>
+          
+          <span class="tech-badge">UMAP</span>
           
           <span class="tech-badge">Plotly</span>
+          
+          <span class="tech-badge">seaborn</span>
           
           <span class="tech-badge">Jupyter Notebooks</span>
           
@@ -159,19 +169,19 @@ I’m currently seeking data analyst or data science roles where I can continue 
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>Fan energy is contagious, but it is also unpredictable. The athletics department wanted to know which in-game events (touchdowns, turnovers, big defensive stops, walk-up music choices) produced the biggest crowd reactions — and whether the pattern differed by opponent, weather, or game time. As the mascot, I had strong professional interest in this question.
+            <p>NBA player positions (Guard, Forward, Center) are too coarse to capture how modern players actually play. A stretch-four and a rim-running big both count as &#34;power forwards,&#34; yet they fill completely different roles. The goal was to let the data define player types from scratch — without relying on traditional labels — using only per-game statistics and engineered performance features.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Combined play-by-play game data with decibel readings from stadium microphones across three seasons (~36 home games). Engineered features for score differential, down-and-distance, quarter, temperature, and opponent rank. Produced interactive Plotly dashboards that let non-technical staff filter by season and event type to explore crowd response patterns on their own.
+            <p>Pulled per-game stats for 572 players via the NBA API and filtered to 301 qualified players (≥30 games, ≥15 minutes per game). Engineered 13 features including per-minute scoring and rebounding rates, three-point rate, paint score, assist ratio, and an encoded position score. Applied StandardScaler before running K-Means with elbow-method and silhouette-score tuning to select K=6. Reduced dimensions with PCA and UMAP for visualization, then used an auction-based labeling algorithm to assign each cluster a unique, meaningful archetype name based on the centroid feature profile.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>Defensive turnovers produced the loudest average crowd response — louder even than touchdowns — especially when MSU was trailing. Walk-up music selections in the 3rd quarter showed a statistically significant effect on cheer volume for games decided by fewer than 10 points. The athletics team used these findings to redesign the third-quarter entertainment package for the following season. I was given extra treats for my contributions.
+            <p>Produced six interpretable archetypes — Elite Scorer, Playmaker, 3PT Specialist, Rebounding Big, Rim Protector, and Perimeter Defender — with well-known players anchoring each group (e.g., Luka Dončić in Elite Scorer, Rudy Gobert in Rebounding Big). Interactive Plotly scatter plots and radar charts allow exploration of all 301 players and their cluster profiles. The clustering confirmed that modern NBA roles do not map cleanly onto traditional positions, and that three-point tendency and playmaking together drive the largest variance across players.
 </p>
           </div>
         </details>
@@ -179,14 +189,79 @@ I’m currently seeking data analyst or data science roles where I can continue 
         <!-- Links to the GitHub repo and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="https://github.com/nemethb3/cmse492-nba-player-clustering" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
           
-          <a href="https://github.com/zeke-wonder-dog/spartan-cheer-analysis/blob/main/cheer_analysis.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
-            View Notebook
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      <div class="project-image-wrapper">
+        <img
+          src="img/placeholder_project_1.png"
+          alt="Thumbnail for NYC 311 Cloud Analytics (AWS)"
+          class="project-image"
+        />
+      </div>
+
+      <div class="project-body">
+        <h3 class="project-title">NYC 311 Cloud Analytics (AWS)</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">Built a cloud-based analytics pipeline on AWS to explore 200,000 NYC 311 service requests from Q1 2026. Ingested raw data into S3, queried it with Athena using SQL, and produced stakeholder-ready findings on complaint volume by borough, agency, and complaint type — all without provisioning a single server.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">AWS S3</span>
+          
+          <span class="tech-badge">AWS Athena</span>
+          
+          <span class="tech-badge">SQL</span>
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>New York City receives millions of 311 service requests each year across dozens of agencies. Understanding which boroughs generate the most complaints, which agencies handle the highest volume, and how complaint type varies by location requires working with large datasets efficiently. The challenge was to stand up a scalable, serverless query environment from raw CSV data without managing infrastructure.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Loaded a 200k-row sample of NYC 311 complaints (Jan–Mar 2026) and a companion agencies lookup table into an S3 bucket. Registered both tables in AWS Athena and wrote SQL queries to count complaints by agency, join agency names, group by borough and complaint type, and identify the top complaint categories per area. All queries run serverlessly against data stored in S3, making the workflow reproducible and cost-effective.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>Identified the top 10 agencies by complaint volume and mapped complaint types — including Snow or Ice, Noise, and HEAT/HOT WATER — across all five boroughs. The Athena-based setup means any stakeholder with AWS access can run the same queries against updated data without additional engineering. This project demonstrates a practical cloud data workflow: raw files in S3, schema-on-read querying with Athena, and shareable SQL reports.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/nemethb3/aws-nyc311-nemethb3" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
           </a>
+          
           
         </div>
       </div>
