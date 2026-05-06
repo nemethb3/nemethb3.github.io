@@ -1,14 +1,18 @@
 name: "Brendan Nemeth"
-tagline: "Senior Data Science Student | Michigan State University"
+tagline: "Data Science Graduate | Michigan State University"
 
 about: |
-  I’m a Data Science student at Michigan State University who enjoys using data to understand patterns and solve real problems. 
-  In my coursework and projects, I’ve built end-to-end data workflows using Python, SQL, and machine learning tools. 
-  I’m especially interested in turning raw data into clear insights and practical models that support better decisions. 
-  I’m currently seeking data analyst or data science roles where I can continue applying statistics and machine learning to meaningful problems.
+  I’m a Data Science graduate from Michigan State University
+  (May 2026) with experience building end-to-end data pipelines,
+  training machine learning models, and delivering insights that
+  drive real decisions. I’ve worked across the full data stack —
+  from raw data wrangling and ETL workflows to model development
+  and interactive dashboards. I’m seeking data analyst and data
+  science roles in Chicago where I can apply Python, SQL, and
+  machine learning to meaningful problems.
 
 
 # Contact information
-email: "nemethb3@msu.edu"
+email: "brendannemeth@gmail.com"
 linkedin: "https://www.linkedin.com/in/brendannemeth"
 github: "https://github.com/nemethb3"

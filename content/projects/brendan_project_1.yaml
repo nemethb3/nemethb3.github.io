@@ -35,16 +35,14 @@ approach: >
   upset alerts, bracket building, and tournament simulations.
 
 results_impact: >
-  Built a full data pipeline that integrates NCAA tournament data,
-  team-level performance metrics, and seed information to construct
-  Round 1 matchups and beyond. Engineered features such as efficiency
-  metrics, power ratings, and historical performance indicators, then
-  applied probabilistic modeling to estimate win likelihoods for each
-  game. Developed logic to identify underdogs, assign upset probabilities,
-  and generate interpretable “why” factors based on feature differentials.
-  Deployed the system as an interactive Streamlit app with modules for
-  upset alerts, bracket building, and tournament simulations.
+  Delivered an interactive Streamlit app capable of generating
+  upset probability scores for any Round 1 matchup. The model
+  surfaces high-risk games with interpretable reasoning —
+  showing which specific feature differentials (e.g. efficiency
+  gap, power rating delta) drive each prediction. Bracket
+  simulation module allows users to run full tournament scenarios
+  and compare upset-adjusted outcomes against seed-based
+  expectations.
 
-repo_url: "https://github.com/nemethb3/march-madness-upset-analytics.git"
-notebook_url: "https://github.com/zeke-wonder-dog/nap-spot-predictor/blob/main/analysis.ipynb"
+repo_url: “https://github.com/nemethb3/march-madness-upset-analytics.git”
 image_path: "img/march_madness.png"
