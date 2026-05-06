@@ -44,5 +44,5 @@ results_impact: >
   and compare upset-adjusted outcomes against seed-based
   expectations.
 
-repo_url: “https://github.com/nemethb3/march-madness-upset-analytics.git”
+repo_url: “https://github.com/nemethb3/march-madness-upset-analytics”
 image_path: "img/march_madness.png"

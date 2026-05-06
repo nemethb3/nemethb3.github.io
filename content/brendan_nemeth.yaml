@@ -12,6 +12,18 @@ about: |
   machine learning to meaningful problems.
 
 
+skills:
+  - category: "Languages"
+    tools: [Python, SQL, R]
+  - category: "Libraries"
+    tools: [pandas, NumPy, scikit-learn, Plotly, Matplotlib, Seaborn, Streamlit]
+  - category: "ML & Modeling"
+    tools: [Regression, Random Forest, K-Means, PCA, UMAP, NLP, Cross-Validation]
+  - category: "Cloud & Tools"
+    tools: [AWS S3, AWS Athena, AWS SageMaker, Docker, Git, MySQL, Jupyter, VS Code]
+  - category: "BI & Visualization"
+    tools: [Tableau, Power BI, "Excel (Pivot Tables, VBA)"]
+
 # Contact information
 email: "brendannemeth@gmail.com"
 linkedin: "https://www.linkedin.com/in/brendannemeth"

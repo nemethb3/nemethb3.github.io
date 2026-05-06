@@ -8,6 +8,19 @@
   <div class="about-text">{{ student.about | safe }}</div>
 </section>
 
+<!-- ===== Skills section ===== -->
+<section id="skills" class="section skills-section">
+  <h2>Skills</h2>
+  <dl class="skills-list">
+    {% for skill in student.skills %}
+    <div class="skill-row">
+      <dt class="skill-category">{{ skill.category }}</dt>
+      <dd class="skill-items">{{ skill.tools | join(", ") }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</section>
+
 <!-- ===== Projects section ===== -->
 <section id="projects" class="section projects-section">
   <h2>Projects</h2>

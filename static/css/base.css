@@ -94,6 +94,38 @@ img {
   margin-top: 1rem;
 }
 
+/* ----- Skills section ----- */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: 0.25rem 1rem;
+  align-items: baseline;
+}
+
+.skill-category {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.skill-items {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .skill-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ----- Project grid ----- */
 .project-grid {
   display: grid;
