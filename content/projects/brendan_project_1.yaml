@@ -30,7 +30,7 @@ approach: >
   metrics, power ratings, and historical performance indicators, then
   applied probabilistic modeling to estimate win likelihoods for each
   game. Developed logic to identify underdogs, assign upset probabilities,
-  and generate interpretable “why” factors based on feature differentials.
+  and generate interpretable "why" factors based on feature differentials.
   Deployed the system as an interactive Streamlit app with modules for
   upset alerts, bracket building, and tournament simulations.
 
@@ -44,5 +44,5 @@ results_impact: >
   and compare upset-adjusted outcomes against seed-based
   expectations.
 
-repo_url: “https://github.com/nemethb3/march-madness-upset-analytics”
+repo_url: "https://github.com/nemethb3/march-madness-upset-analytics"
 image_path: "img/march_madness.png"
