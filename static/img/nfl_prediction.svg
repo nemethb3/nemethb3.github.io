@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="NFL Prediction Model">
+  <rect width="1200" height="630" rx="24" fill="#0f172a"/>
+  <g transform="rotate(-24 600 260)">
+    <ellipse cx="600" cy="260" rx="210" ry="125" fill="#8b5a2b"/>
+    <ellipse cx="600" cy="260" rx="210" ry="125" fill="none" stroke="#5c3a1a" stroke-width="6"/>
+    <rect x="470" y="248" width="260" height="24" rx="12" fill="#f8fafc"/>
+    <g stroke="#f8fafc" stroke-width="10" stroke-linecap="round">
+      <line x1="560" y1="222" x2="560" y2="298"/>
+      <line x1="600" y1="222" x2="600" y2="298"/>
+      <line x1="640" y1="222" x2="640" y2="298"/>
+    </g>
+  </g>
+  <text x="600" y="480" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="bold" fill="#f8fafc" letter-spacing="6">NFL PREDICTION</text>
+  <text x="600" y="540" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" fill="#94a3b8" letter-spacing="10">FANTASY MODEL</text>
+</svg>

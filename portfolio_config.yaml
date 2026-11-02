@@ -14,6 +14,7 @@ student_file: content/brendan_nemeth.yaml
 # List the YAML files (inside content/projects/) you want shown.
 # Remove example projects and add your own once you're ready.
 projects:
+  - content/projects/brendan_project_5.yaml
   - content/projects/brendan_project_1.yaml
   - content/projects/brendan_project_3.yaml
   - content/projects/brendan_project_4.yaml

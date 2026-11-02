@@ -89,6 +89,83 @@ machine learning to meaningful problems.</p></div>
     <article class="project-card">
 
       <!-- Project thumbnail image -->
+      
+      <div class="project-image-wrapper">
+        <img
+          src="img/nfl_prediction.svg"
+          alt="Thumbnail for NFL Prediction &amp; Fantasy Model"
+          class="project-image"
+        />
+      </div>
+      
+
+      <div class="project-body">
+        <h3 class="project-title">NFL Prediction &amp; Fantasy Model</h3>
+
+        <!-- Short summary written for a non-expert audience -->
+        <p class="project-summary">A validated NFL prediction system built on real 2015-2025 data: game spread predictions, season win projections, fantasy player rankings, and playoff probabilities, each backtested against real historical outcomes. Elo-based season win projections reached +0.977 correlation by Week 16 of 2025.
+</p>
+
+        <!-- Tech stack as pill badges -->
+        <div class="tech-stack">
+          
+          <span class="tech-badge">Python</span>
+          
+          <span class="tech-badge">pandas</span>
+          
+          <span class="tech-badge">scikit-learn</span>
+          
+          <span class="tech-badge">SQLite</span>
+          
+          <span class="tech-badge">React</span>
+          
+        </div>
+
+        <!-- Collapsible details (problem / approach / results) -->
+        <details class="project-details">
+          <summary>More details</summary>
+
+          <div class="detail-block">
+            <h4>Problem</h4>
+            <p>Most sports prediction projects never get checked against real outcomes, so it is hard to know whether a model actually works. This project set out to build NFL predictions that could be validated honestly, including reporting where the model loses to the Vegas line.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Approach</h4>
+            <p>Built two prediction tracks on nflverse data: an EPA-based pipeline and an Elo pipeline with team and QB Elo ratings, weekly recalibration, and matchup adjustments. Compared both against Vegas lines with leave-one-out cross-validation for blend weights, and built a Monte Carlo playoff simulator over the real 7-team-per-conference structure plus a fantasy ranking system. Results are tracked weekly in SQLite and shown in a React dashboard.
+</p>
+          </div>
+
+          <div class="detail-block">
+            <h4>Results &amp; Impact</h4>
+            <p>Elo beat EPA at both the season-win and game-spread level. Season win projections reached +0.977 correlation by Week 16 of 2025, and fantasy rankings reached +0.651 correlation for running backs on real 2025 PPR data. The honest headline finding: Vegas beat every model blend tested, and several adjustments that looked promising tested null and were left out rather than kept.
+</p>
+          </div>
+        </details>
+
+        <!-- Links to the GitHub repo, live demo, and notebook -->
+        <div class="project-links">
+          
+          <a href="https://github.com/nemethb3/nfl-prediction-model" target="_blank" rel="noopener" class="btn btn-repo">
+            View Repo
+          </a>
+          
+          
+          <a href="https://nfl-prediction-model-gules.vercel.app/" target="_blank" rel="noopener" class="btn btn-demo">
+            Live Demo
+          </a>
+          
+          
+        </div>
+      </div>
+
+    </article>
+    
+    <article class="project-card">
+
+      <!-- Project thumbnail image -->
+      
       <div class="project-image-wrapper">
         <img
           src="img/march_madness.png"
@@ -96,6 +173,7 @@ machine learning to meaningful problems.</p></div>
           class="project-image"
         />
       </div>
+      
 
       <div class="project-body">
         <h3 class="project-title">March Madness Upset Analytics</h3>
@@ -144,12 +222,13 @@ machine learning to meaningful problems.</p></div>
           </div>
         </details>
 
-        <!-- Links to the GitHub repo and notebook -->
+        <!-- Links to the GitHub repo, live demo, and notebook -->
         <div class="project-links">
           
           <a href="https://github.com/nemethb3/march-madness-upset-analytics" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
+          
           
           
         </div>
@@ -160,6 +239,7 @@ machine learning to meaningful problems.</p></div>
     <article class="project-card">
 
       <!-- Project thumbnail image -->
+      
       <div class="project-image-wrapper">
         <img
           src="img/nba_clustering.png"
@@ -167,6 +247,7 @@ machine learning to meaningful problems.</p></div>
           class="project-image"
         />
       </div>
+      
 
       <div class="project-body">
         <h3 class="project-title">NBA Player Clustering by Playing Style</h3>
@@ -221,12 +302,13 @@ machine learning to meaningful problems.</p></div>
           </div>
         </details>
 
-        <!-- Links to the GitHub repo and notebook -->
+        <!-- Links to the GitHub repo, live demo, and notebook -->
         <div class="project-links">
           
           <a href="https://github.com/nemethb3/cmse492-nba-player-clustering" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
+          
           
           
         </div>
@@ -237,6 +319,7 @@ machine learning to meaningful problems.</p></div>
     <article class="project-card">
 
       <!-- Project thumbnail image -->
+      
       <div class="project-image-wrapper">
         <img
           src="img/aws_nyc311.png"
@@ -244,6 +327,7 @@ machine learning to meaningful problems.</p></div>
           class="project-image"
         />
       </div>
+      
 
       <div class="project-body">
         <h3 class="project-title">NYC 311 Cloud Analytics (AWS)</h3>
@@ -290,12 +374,13 @@ machine learning to meaningful problems.</p></div>
           </div>
         </details>
 
-        <!-- Links to the GitHub repo and notebook -->
+        <!-- Links to the GitHub repo, live demo, and notebook -->
         <div class="project-links">
           
           <a href="https://github.com/nemethb3/aws-nyc311-nemethb3" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
+          
           
           
         </div>

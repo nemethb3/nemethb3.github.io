@@ -30,6 +30,7 @@
     <article class="project-card">
 
       <!-- Project thumbnail image -->
+      {% if project.image_path %}
       <div class="project-image-wrapper">
         <img
           src="{{ project.image_path }}"
@@ -37,6 +38,7 @@
           class="project-image"
         />
       </div>
+      {% endif %}
 
       <div class="project-body">
         <h3 class="project-title">{{ project.title }}</h3>
@@ -71,11 +73,16 @@
           </div>
         </details>
 
-        <!-- Links to the GitHub repo and notebook -->
+        <!-- Links to the GitHub repo, live demo, and notebook -->
         <div class="project-links">
           {% if project.repo_url %}
           <a href="{{ project.repo_url }}" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
+          </a>
+          {% endif %}
+          {% if project.demo_url %}
+          <a href="{{ project.demo_url }}" target="_blank" rel="noopener" class="btn btn-demo">
+            Live Demo
           </a>
           {% endif %}
           {% if project.notebook_url %}
