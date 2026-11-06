@@ -322,32 +322,32 @@ machine learning to meaningful problems.</p></div>
       
       <div class="project-image-wrapper">
         <img
-          src="img/aws_nyc311.png"
-          alt="Thumbnail for NYC 311 Cloud Analytics (AWS)"
+          src="img/chicago_morning_brief.svg"
+          alt="Thumbnail for Chicago Morning Brief"
           class="project-image"
         />
       </div>
       
 
       <div class="project-body">
-        <h3 class="project-title">NYC 311 Cloud Analytics (AWS)</h3>
+        <h3 class="project-title">Chicago Morning Brief</h3>
 
         <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">Built a cloud-based analytics pipeline on AWS to explore 200,000 NYC 311 service requests from Q1 2026. Ingested raw data into S3, queried it with Athena using SQL, and produced stakeholder-ready findings on complaint volume by borough, agency, and complaint type — all without provisioning a single server.
+        <p class="project-summary">A daily briefing for Chicago, built as a dbt project on DuckDB: Chicago 311 service requests plus Open-Meteo weather, modeled through staging, intermediate, and mart layers and published as a readable brief every morning. First week: 36,211 requests, with Aircraft Noise Complaint the top type at 10,766.
 </p>
 
         <!-- Tech stack as pill badges -->
         <div class="tech-stack">
           
-          <span class="tech-badge">AWS S3</span>
-          
-          <span class="tech-badge">AWS Athena</span>
-          
-          <span class="tech-badge">SQL</span>
-          
           <span class="tech-badge">Python</span>
           
-          <span class="tech-badge">pandas</span>
+          <span class="tech-badge">dbt</span>
+          
+          <span class="tech-badge">DuckDB</span>
+          
+          <span class="tech-badge">GitHub Actions</span>
+          
+          <span class="tech-badge">SQL</span>
           
         </div>
 
@@ -357,19 +357,19 @@ machine learning to meaningful problems.</p></div>
 
           <div class="detail-block">
             <h4>Problem</h4>
-            <p>New York City receives millions of 311 service requests each year across dozens of agencies. Understanding which boroughs generate the most complaints, which agencies handle the highest volume, and how complaint type varies by location requires working with large datasets efficiently. The challenge was to stand up a scalable, serverless query environment from raw CSV data without managing infrastructure.
+            <p>Chicago publishes 311 service requests and weather openly, but there is no simple daily read on what the city is asking for. The challenge was to turn two free, keyless sources into a briefing a person can actually read, refreshed every morning without anyone touching it.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Approach</h4>
-            <p>Loaded a 200k-row sample of NYC 311 complaints (Jan–Mar 2026) and a companion agencies lookup table into an S3 bucket. Registered both tables in AWS Athena and wrote SQL queries to count complaints by agency, join agency names, group by borough and complaint type, and identify the top complaint categories per area. All queries run serverlessly against data stored in S3, making the workflow reproducible and cost-effective.
+            <p>Two ingest scripts pull the last 7 days of Chicago 311 requests from the Socrata API and daily weather from Open-Meteo into DuckDB. dbt models the data through staging, intermediate, and mart layers, with a window function ranking each day&#39;s top request type and 5 tests guarding the models. A render script writes brief.md, and GitHub Actions runs the whole pipeline every morning at 12:00 UTC and commits the refreshed brief back to main.
 </p>
           </div>
 
           <div class="detail-block">
             <h4>Results &amp; Impact</h4>
-            <p>Identified the top 10 agencies by complaint volume and mapped complaint types — including Snow or Ice, Noise, and HEAT/HOT WATER — across all five boroughs. The Athena-based setup means any stakeholder with AWS access can run the same queries against updated data without additional engineering. This project demonstrates a practical cloud data workflow: raw files in S3, schema-on-read querying with Athena, and shareable SQL reports.
+            <p>First week (Oct 30-Nov 5, 2026): 36,211 requests, busiest day Nov 3 with 6,282, Aircraft Noise Complaint the top type at 10,766, Ward 41 with 10,507 requests, and 21.2% of requests still open. The brief refreshes itself daily, and every number in it was verified against the live APIs.
 </p>
           </div>
         </details>
@@ -377,10 +377,14 @@ machine learning to meaningful problems.</p></div>
         <!-- Links to the GitHub repo, live demo, and notebook -->
         <div class="project-links">
           
-          <a href="https://github.com/nemethb3/aws-nyc311-nemethb3" target="_blank" rel="noopener" class="btn btn-repo">
+          <a href="https://github.com/nemethb3/chicago-morning-brief" target="_blank" rel="noopener" class="btn btn-repo">
             View Repo
           </a>
           
+          
+          <a href="https://github.com/nemethb3/chicago-morning-brief/blob/main/brief.md" target="_blank" rel="noopener" class="btn btn-demo">
+            Live Demo
+          </a>
           
           
         </div>

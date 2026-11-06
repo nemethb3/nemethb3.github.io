@@ -1,0 +1,40 @@
+title: "Chicago Morning Brief"
+
+short_summary: >
+  A daily briefing for Chicago, built as a dbt project on DuckDB: Chicago
+  311 service requests plus Open-Meteo weather, modeled through staging,
+  intermediate, and mart layers and published as a readable brief every
+  morning. First week: 36,211 requests, with Aircraft Noise Complaint the
+  top type at 10,766.
+
+tech_stack:
+  - Python
+  - dbt
+  - DuckDB
+  - GitHub Actions
+  - SQL
+
+problem_statement: >
+  Chicago publishes 311 service requests and weather openly, but there is
+  no simple daily read on what the city is asking for. The challenge was to
+  turn two free, keyless sources into a briefing a person can actually read,
+  refreshed every morning without anyone touching it.
+
+approach: >
+  Two ingest scripts pull the last 7 days of Chicago 311 requests from the
+  Socrata API and daily weather from Open-Meteo into DuckDB. dbt models the
+  data through staging, intermediate, and mart layers, with a window
+  function ranking each day's top request type and 5 tests guarding the
+  models. A render script writes brief.md, and GitHub Actions runs the whole
+  pipeline every morning at 12:00 UTC and commits the refreshed brief back
+  to main.
+
+results_impact: >
+  First week (Oct 30-Nov 5, 2026): 36,211 requests, busiest day Nov 3 with
+  6,282, Aircraft Noise Complaint the top type at 10,766, Ward 41 with
+  10,507 requests, and 21.2% of requests still open. The brief refreshes
+  itself daily, and every number in it was verified against the live APIs.
+
+repo_url: "https://github.com/nemethb3/chicago-morning-brief"
+demo_url: "https://github.com/nemethb3/chicago-morning-brief/blob/main/brief.md"
+image_path: "img/chicago_morning_brief.svg"
